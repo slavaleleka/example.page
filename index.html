@@ -33,7 +33,18 @@
             width: auto;
         }
     }
-    </style>    
+    </style>
+    <script>
+        const scriptElement = document.createElement('script');
+        scriptElement.type = 'text/javascript';
+        scriptElement.textContent = `const aa = () => {
+            var testChildFrame = document.createElement('iframe');
+            document.body.appendChild(testChildFrame);
+            window.alert('not aborted');
+            }
+            aa();`;
+        (document.head||document.documentElement).appendChild(scriptElement);
+    </script>
 </head>
 
 <body>
