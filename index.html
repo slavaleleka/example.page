@@ -37,8 +37,8 @@
     <script>
         const test = () => {
             const testChildFrame = document.createElement('iframe');
-            document.body.appendChild(testChildFrame);
             window.alert('not aborted');
+            document.body.appendChild(testChildFrame);
         }
         test();
     </script>
