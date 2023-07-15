@@ -1,4 +1,4 @@
-const TARGET_URL = 'example.com';
+const TARGET_URL = 'http://example.com';
 
 const redirect = () => {
     const { location } = window;
